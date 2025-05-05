@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# ToDo-App
-=======
 # ToDo App
 
 A simple ToDo list app built with **Vue.js**, **Tailwind CSS**, and **Electron**. This app allows users to create, manage, and track tasks in different to-do lists.
@@ -29,4 +26,3 @@ Make sure you have **Node.js** and **npm** installed on your machine. You can ch
 ```bash
 node -v
 npm -v
->>>>>>> master
