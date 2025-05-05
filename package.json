@@ -1,0 +1,50 @@
+{
+  "name": "todo",
+  "version": "0.0.0",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "electron": "electron electron/main.js",
+    "dev:electron": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && npm run electron\"",
+    "build": "vite build",
+    "pack": "electron-builder --dir",
+    "dist": "npm run build && electron-builder"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "electron": "^36.1.0",
+    "electron-builder": "^26.0.12",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.3.2",
+    "vite": "^6.2.4",
+    "vite-plugin-vue-devtools": "^7.7.2",
+    "wait-on": "^8.0.3"
+  },
+  "build": {
+    "appId": "com.example.todo",
+    "productName": "ToDo",
+    "icon": "build/icon",
+    "mac": {
+      "icon": "build/icon.icns",
+      "target": "dmg"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "node_modules/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "build/",
+        "to": "build",
+        "filter": ["**/*"]
+      }
+    ]
+  }
+}
