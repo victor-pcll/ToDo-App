@@ -1,29 +1,28 @@
-# ToDo
+# ToDo App
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple ToDo list app built with **Vue.js**, **Tailwind CSS**, and **Electron**. This app allows users to create, manage, and track tasks in different to-do lists.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Create and manage multiple to-do lists
+- Add, edit, and delete tasks within each list
+- Mark tasks as done or not done
+- Save the user's tasks locally, so they persist even when the app is closed
+- Cross-platform support for macOS, Windows, and Linux (with Electron)
 
-## Customize configuration
+## Tech Stack
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- **Frontend**: Vue.js, Tailwind CSS
+- **Backend**: Electron (for building desktop app)
+- **State Management**: Vue's Composition API (with `ref` and `reactive`)
+- **Build Tools**: Vite (for frontend development), Electron Builder (for packaging and distribution)
 
-## Project Setup
+## Installation
 
-```sh
-npm install
-```
+### Prerequisites
 
-### Compile and Hot-Reload for Development
+Make sure you have **Node.js** and **npm** installed on your machine. You can check if they're installed by running:
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+```bash
+node -v
+npm -v
