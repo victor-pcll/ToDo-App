@@ -1,4 +1,4 @@
-# ToDo App
+# ✅ ToDo App
 
 A simple ToDo list app built with **Vue.js**, **Tailwind CSS**, and **Electron**. This app allows users to create, manage, and track tasks in different to-do lists.
 
